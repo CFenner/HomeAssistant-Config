@@ -1,0 +1,5 @@
+text_sensor:
+  - platform: sml
+    name: "${friendly_name} Energy Text"
+    obis_code: "1-0:1.8.0"
+    format: uint
