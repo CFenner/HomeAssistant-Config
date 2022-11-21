@@ -1,0 +1,3 @@
+altitude:
+  name: "${friendly_name} Altitude"
+  icon: mdi:image-filter-hdr

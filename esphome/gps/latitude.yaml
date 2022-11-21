@@ -1,0 +1,3 @@
+latitude:
+  name: "${friendly_name} Latitude"
+  icon: mdi:latitude
