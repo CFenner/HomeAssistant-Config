@@ -1,0 +1,5 @@
+packages:
+  esp: !include esp.yaml
+
+substitutions:
+  board: m5stack-atom

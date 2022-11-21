@@ -1,0 +1,11 @@
+#Raspberry Pico W led on the board
+light:
+  - platform: binary
+    id: status_led
+    name: "${friendly_name} Status LED"
+    output: status_led_output
+
+output:
+  - platform: gpio
+    pin: LED
+    id: status_led_output

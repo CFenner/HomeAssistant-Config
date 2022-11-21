@@ -1,0 +1,9 @@
+substitutions:
+  board: esp32dev
+
+esp32:
+  board: ${board}
+  framework:
+    type: arduino
+
+captive_portal:

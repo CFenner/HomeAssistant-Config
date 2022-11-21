@@ -1,0 +1,5 @@
+switch:
+  - platform: gpio
+    name: "${friendly_name} Fan"
+    pin: 19
+    icon: mdi:fan

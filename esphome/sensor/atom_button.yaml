@@ -1,0 +1,6 @@
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: 39
+      inverted: true
+    name: ${friendly_name} Button

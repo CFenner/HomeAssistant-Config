@@ -1,0 +1,9 @@
+light:
+  - platform: binary
+    output: flash
+    name: ${friendly_name} Licht
+
+output:
+  - platform: gpio
+    pin: GPIO4
+    id: flash
