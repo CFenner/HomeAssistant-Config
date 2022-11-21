@@ -1,0 +1,18 @@
+esphome:
+  name: ${name}
+  comment: ${friendly_name}
+
+# ESPHome API configuration
+api:
+  password: !secret esphome_api_password
+
+# Over-the-air update
+ota:
+  #password: !secret esphome_ota_password
+
+# Sync time with HA
+time:
+  - platform: homeassistant
+
+# Logging
+logger:
