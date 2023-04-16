@@ -1,0 +1,13 @@
+esp32:
+  board: esp32-c3-devkitm-1
+  variant: esp32c3
+  framework:
+#    type: esp-idf
+    type: arduino
+    # See https://github.com/espressif/arduino-esp32/releases for available versions
+    version: 2.0.2
+    platform_version: 5.2.0
+
+esphome:
+  platformio_options:
+      board_build.flash_mode: dio
