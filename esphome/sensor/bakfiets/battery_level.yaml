@@ -1,0 +1,10 @@
+sensor:
+  - platform: ble_client
+    ble_client_id: shimano
+    service_uuid: '180F'
+    type: characteristic
+    characteristic_uuid: '2A19'
+    name: "${friendly_name} Battery Level"
+    icon: 'mdi:battery'
+    unit_of_measurement: '%'
+    entity_category: diagnostic

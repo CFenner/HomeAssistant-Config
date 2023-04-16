@@ -1,0 +1,5 @@
+sensor:
+  - platform: ble_rssi
+    mac_address: !secret mac_bakfiets
+    name: "${friendly_name} BLE Device RSSI"
+    entity_category: diagnostic
