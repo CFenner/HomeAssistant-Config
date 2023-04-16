@@ -1,0 +1,12 @@
+binary_sensor:
+  - platform: template
+    name: ${friendly_name} Vehicle Moving
+    id: moving
+    device_class: moving
+
+esphome:
+  on_boot:
+    then:
+      - binary_sensor.template.publish:
+          id: moving
+          state: false

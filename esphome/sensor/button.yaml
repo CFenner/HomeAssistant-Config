@@ -1,0 +1,8 @@
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: 19
+      mode:
+        input: true
+        pulldown: true
+    name: "${friendly_name} Button"

@@ -1,0 +1,10 @@
+sensor:
+  # https://esphome.io/components/sensor/dht.html
+  - platform: dht
+    model: DHT11
+    pin: 32
+    temperature:
+      name: "${friendly_name} Temperature"
+    humidity:
+      name: "${friendly_name} Humidity"
+    update_interval: 30s

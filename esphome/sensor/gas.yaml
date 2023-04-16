@@ -1,0 +1,23 @@
+sensor:
+  # https://esphome.io/components/sensor/pulse_meter.html
+  # sensor cables: white-orange, orange, white-blue, blue, white-green, green
+  # green: data
+  # white-blue: 4,4v
+  # rest: gnd
+  - platform: pulse_meter
+    name: "${friendly_name} Gas Usage"
+    unit_of_measurement: 'm³ / min'
+    #icon: 'mdi:fire'
+    pin: 26
+    internal_filter: 100ms
+    accuracy_decimals: 3
+    filters:
+      - multiply: 0.01
+    total:
+      name: "${friendly_name} Gas Total"
+      unit_of_measurement: "m³"
+      icon: 'mdi:fire'
+      device_class: gas
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.01

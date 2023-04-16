@@ -4,7 +4,8 @@ esphome:
 
 # ESPHome API configuration
 api:
-  password: !secret esphome_api_password
+  encryption:
+    key: !secret esphome_api_encryption_key
 
 # Over-the-air update
 ota:
