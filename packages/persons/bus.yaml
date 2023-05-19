@@ -1,0 +1,10 @@
+person:
+  - id: bus
+    name: Bus
+    device_trackers:
+      - device_tracker.vw_bus_position
+homeassistant:
+  customize:
+    person.bus:
+      entity_picture: "/local/persons/bus.jpg"
+      #icon: mdi:van-passenger

@@ -1,0 +1,21 @@
+utility_meter:
+  power_hourly:
+    name: Power (hourly)
+    source: sensor.power
+    cycle: hourly
+  power_daily:
+    name: Power (daily)
+    source: sensor.power
+    cycle: daily
+  power_weekly:
+    name: Power (weekly)
+    source: sensor.power
+    cycle: weekly
+  power_monthly:
+    name: Power (monthly)
+    source: sensor.power
+    cycle: monthly
+  power_yearly:
+    name: Power (yearly)
+    source: sensor.power
+    cycle: yearly

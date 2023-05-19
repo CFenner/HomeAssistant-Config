@@ -1,0 +1,10 @@
+person:
+  - id: lastenfahrrad
+    name: Lastenfahrrad
+    device_trackers:
+      - device_tracker.atom_bakfiets_position
+homeassistant:
+  customize:
+    person.lastenfahrrad:
+      entity_picture: "/local/persons/bakfiets.jpg"
+      #icon: mdi:bicycle-cargo

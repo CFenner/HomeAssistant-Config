@@ -1,0 +1,21 @@
+utility_meter:
+  water_hourly:
+    name: Water (stündlich)
+    source: sensor.water
+    cycle: hourly
+  water_daily:
+    name: Water (täglich)
+    source: sensor.water
+    cycle: daily
+  water_weekly:
+    name: Water (wöchentlich)
+    source: sensor.water
+    cycle: weekly
+  water_monthly:
+    name: Water (monatlich)
+    source: sensor.water
+    cycle: monthly
+  water_yearly:
+    name: Water (jährlich)
+    source: sensor.water
+    cycle: yearly

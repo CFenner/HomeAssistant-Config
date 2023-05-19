@@ -1,0 +1,21 @@
+utility_meter:
+  energy_hourly:
+    name: Strom (stündlich)
+    source: sensor.energy
+    cycle: hourly
+  energy_daily:
+    name: Strom (täglich)
+    source: sensor.energy
+    cycle: daily
+  energy_weekly:
+    name: Strom (wöchentlich)
+    source: sensor.energy
+    cycle: weekly
+  energy_monthly:
+    name: Strom (monatlich)
+    source: sensor.energy
+    cycle: monthly
+  energy_yearly:
+    name: Strom (jährlich)
+    source: sensor.energy
+    cycle: yearly
