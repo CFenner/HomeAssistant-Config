@@ -1,0 +1,16 @@
+template:
+  - sensor:
+    - name: Bakfiets Battery Level
+      device_class: battery
+      unique_id: d8e2abcb-8070-42e3-8b2f-095d7309254e
+      unit_of_measurement: '%'
+      state: >-
+        {% if states('sensor.atom_bakfiets_battery_level') not in ("unavailable", "unknown") -%}
+          {{ states('sensor.atom_bakfiets_battery_level') | float(0) }}
+        {%- else -%}
+          {{ states('sensor.bakfiets_battery_level') | float(0) }}
+        {%- endif %}
+      icon: >-
+        {% if states('binary_sensor.bakfiets_battery_charging') == 'on' -%}
+          mdi:battery-charging
+        {%- endif %}

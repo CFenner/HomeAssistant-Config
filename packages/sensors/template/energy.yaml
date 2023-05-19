@@ -1,0 +1,8 @@
+template:
+  - sensor:
+    - name: 'Energy'
+      unit_of_measurement: kWh
+      icon: mdi:lightning-bolt
+      device_class: energy
+      state_class: total_increasing
+      state: "{{ states('sensor.atom_stromzahler_energy') | float }}"

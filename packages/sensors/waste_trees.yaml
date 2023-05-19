@@ -1,0 +1,6 @@
+sensor:
+  - platform: waste_collection_schedule
+    name: next_christmastrees_collection
+    types:
+      - Christmastrees
+    value_template: '{% if value.daysTo == 0 %}Heute{% elif value.daysTo == 1 %}Morgen{% else %}in {{value.daysTo}} Tagen{% endif %}'

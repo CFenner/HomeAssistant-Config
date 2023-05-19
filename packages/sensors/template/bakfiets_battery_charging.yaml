@@ -1,0 +1,11 @@
+template:
+  - binary_sensor:
+    - name: Bakfiets Battery Charging
+      device_class: battery_charging
+      unique_id: ec324cee-565e-4c11-82b3-cfa68eeb57f0
+      state: >-
+        {% if states('sensor.shelly_lastenfahrrad_power') | float > 5 -%}
+          on
+        {%- else -%}
+          off
+        {%- endif %}

@@ -1,0 +1,6 @@
+sensor: 
+  - platform: waste_collection_schedule
+    name: next_paper_collection
+    types:
+      - Paper
+    value_template: '{% if value.daysTo == 0 %}Heute{% elif value.daysTo == 1 %}Morgen{% else %}in {{value.daysTo}} Tagen{% endif %}'

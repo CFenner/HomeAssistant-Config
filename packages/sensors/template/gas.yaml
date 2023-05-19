@@ -1,0 +1,8 @@
+template:
+  - sensor:
+    - name: 'Gas'
+      unit_of_measurement: m³
+      icon: mdi:fire
+      device_class: gas
+      state_class: total_increasing
+      state: "{{ states('sensor.esp32_gaszahler_gas_total') | float }}"

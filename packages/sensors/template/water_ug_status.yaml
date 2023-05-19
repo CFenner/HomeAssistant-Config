@@ -1,0 +1,11 @@
+template:
+  - binary_sensor:
+    - name: wasserzaehler_ug_status
+      unique_id: d00ec14c-bd71-45a0-8f91-adc677818a3a
+      state: >-
+        {% if states('sensor.wasserzaehler_ug_value') in ("unavailable", "unknown") -%}
+          off
+        {%- else -%}
+          on
+        {%- endif %}
+      device_class: connectivity

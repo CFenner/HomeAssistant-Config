@@ -1,0 +1,19 @@
+template:
+  - sensor:
+    - name: 'Power'
+      unit_of_measurement: W
+      icon: mdi:flash
+      device_class: power
+      state_class: measurement
+      state: "{{ states('sensor.atom_stromzahler_power') | float }}"
+    - name: 'Back to Grid Power'
+      unit_of_measurement: W
+      icon: mdi:flash
+      device_class: power
+      state_class: measurement
+      state: >-
+        {% if states('sensor.atom_stromzahler_power') not in ("unavailable", "unknown") and states('sensor.atom_stromzahler_power') | float < 0 -%}
+          {{ states('sensor.atom_stromzahler_power') | float | abs }}
+        {%- else -%}
+          0
+        {%- endif %}
