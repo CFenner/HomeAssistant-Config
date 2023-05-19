@@ -1,9 +1,7 @@
 text_sensor:
   - platform: ble_client
-    ble_client_id: shimano
+    ble_client_id: bakfiets
     service_uuid: '180A'
-#    type: characteristic
     characteristic_uuid: '2A29'
-    name: "${friendly_name} BLE Device Manufacturer"
+    name: BLE Device Manufacturer
     entity_category: diagnostic
-#    icon: 'none'

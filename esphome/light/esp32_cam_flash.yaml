@@ -1,7 +1,8 @@
+# ESP32-CAM led flash
 light:
   - platform: binary
     output: flash
-    name: ${friendly_name} Licht
+    name: Light
 
 output:
   - platform: gpio

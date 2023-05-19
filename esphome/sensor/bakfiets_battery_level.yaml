@@ -1,10 +1,9 @@
 sensor:
   - platform: ble_client
-    ble_client_id: shimano
+    ble_client_id: bakfiets
     service_uuid: '180F'
     type: characteristic
     characteristic_uuid: '2A19'
-    name: "${friendly_name} Battery Level"
-    icon: 'mdi:battery'
+    name: Battery Level
     unit_of_measurement: '%'
-    entity_category: diagnostic
+    device_class: battery

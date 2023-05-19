@@ -1,8 +1,8 @@
-#Raspberry Pico W led on the board
+# Raspberry Pico W led on the board
 light:
   - platform: binary
     id: status_led
-    name: "${friendly_name} Status LED"
+    name: Status LED
     output: status_led_output
 
 output:

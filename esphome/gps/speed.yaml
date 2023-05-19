@@ -1,3 +1,0 @@
-speed:
-  name: "${friendly_name} Speed"
-  icon: mdi:speedometer

@@ -1,6 +1,6 @@
 binary_sensor:
   - platform: template
-    name: ${friendly_name} Vehicle Moving
+    name: Vehicle Moving
     id: moving
     device_class: moving
 

@@ -3,4 +3,4 @@ binary_sensor:
     pin:
       number: 39
       inverted: true
-    name: ${friendly_name} Button
+    name: Button

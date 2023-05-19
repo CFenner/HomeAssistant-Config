@@ -1,4 +1,4 @@
 sensor:
   - platform: wifi_signal
-    name: "${friendly_name} WiFi Signal"
+    name: WiFi Signal
     update_interval: 60s

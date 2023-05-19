@@ -1,3 +1,0 @@
-longitude:
-  name: "${friendly_name} Longitude"
-  icon: mdi:longitude

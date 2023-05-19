@@ -1,0 +1,7 @@
+button:
+  - platform: output
+    name: Scan
+    icon: mdi:line-scan
+    id: trigger_button
+    output: trigger
+    duration: 100ms

@@ -1,4 +1,4 @@
 binary_sensor:
   - platform: gpio
     pin: GPIO3
-    name: ${friendly_name} Button
+    name: Button

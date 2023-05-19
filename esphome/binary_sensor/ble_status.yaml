@@ -1,6 +1,6 @@
 binary_sensor:
   - platform: template
-    name: ${friendly_name} BLE Device Status
+    name: BLE Device Status
     id: ble_status
     device_class: connectivity
     entity_category: diagnostic

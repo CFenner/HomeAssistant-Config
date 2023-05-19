@@ -1,0 +1,23 @@
+uart:
+  id: uart_barcode
+  baud_rate: 9600
+  tx_pin: 19
+  rx_pin: 22
+  debug:
+    direction: BOTH
+    dummy_receiver: true
+    after:
+      delimiter: "\n"
+    sequence:
+      - lambda: UARTDebug::log_string(direction, bytes);
+      - text_sensor.template.publish:
+          id: barcode
+          state: !lambda |
+            std::string s(bytes.begin(), bytes.end());
+            return s;
+
+# pin to trigger scanner
+output:
+  - platform: gpio
+    pin: 23
+    id: trigger

@@ -1,0 +1,15 @@
+# see https://smarthomeyourself.de/home-assistant-einkaufsliste-ueber-barcode-scanner-fuellen-mit-esphome/
+text_sensor:
+  - platform: template
+    id: barcode
+    name: ${friendly_name}
+    icon: mdi:barcode-scan
+#    on_value:
+#      then:
+#        - if:
+#            condition:
+#              - lambda: 'return id(barcode).state != "unknown";'
+#            then:
+#              - script.execute:
+#                  id: request_ean
+#                  ean: !lambda return x.c_str();

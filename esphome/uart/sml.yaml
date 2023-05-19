@@ -1,0 +1,12 @@
+uart:
+  id: uart_sml
+  baud_rate: 9600
+  rx_pin: 26
+  #tx_pin: 32
+  data_bits: 8
+  parity: NONE
+  stop_bits: 1
+
+#https://esphome.io/components/sml.html
+sml:
+  uart_id: uart_sml

@@ -1,4 +1,4 @@
-#atom neopixel led on the button
+# M5 Atom neopixel led on the button
 light:
   - platform: neopixelbus
     pin: GPIO27
@@ -6,5 +6,5 @@ light:
     variant: SK6812
     type: GRB
     id: status_led
-    name: "${friendly_name} Status LED"
+    name: Status LED
     restore_mode: ALWAYS_OFF

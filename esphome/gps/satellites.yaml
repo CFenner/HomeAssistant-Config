@@ -1,4 +1,0 @@
-satellites:
-  name: "${friendly_name} Satellites"
-  icon: mdi:satellite-variant
-  entity_category: diagnostic

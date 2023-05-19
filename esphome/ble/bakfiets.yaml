@@ -1,0 +1,13 @@
+ble_client:
+  - id: bakfiets
+    mac_address: !secret mac_bakfiets
+    on_connect:
+      then:
+        - binary_sensor.template.publish:
+            id: ble_status
+            state: true
+    on_disconnect:
+      then:
+        - binary_sensor.template.publish:
+            id: ble_status
+            state: false

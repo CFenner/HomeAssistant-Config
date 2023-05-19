@@ -1,6 +1,10 @@
+substitutions:
+  comment: ''
+
 esphome:
   name: ${name}
-  comment: ${friendly_name}
+  friendly_name: ${friendly_name}
+  comment: ${comment}
 
 # ESPHome API configuration
 api:
