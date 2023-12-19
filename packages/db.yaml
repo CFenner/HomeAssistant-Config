@@ -1,2 +1,2 @@
 recorder:
-  db_url: !secret dbURL
+  db_url: sqlite:////config/.data/home-assistant_v2.db
